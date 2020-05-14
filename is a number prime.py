@@ -11,3 +11,4 @@ if numbe_r > 1 :
         print(numbe_r , "is a prime number.")
 else :
     print(numbe_r , "is not a prime number.")
+    
