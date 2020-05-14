@@ -1,0 +1,28 @@
+# INPUTS
+
+import math
+
+n_umber = int(input("Enter an integer: "))
+numbe_r = n_umber
+list = []
+
+def prime(n_umber) :
+    if n_umber > 1 :
+        for i in range(2, n_umber) :
+            if (n_umber % i) == 0 : 
+                return False
+        else :
+            return True
+    else :
+        return False
+
+for n in range(2, n_umber + 1) :
+    if prime(n) == True :
+        list.append(n)
+list2 = []
+for i in list :
+    while(n_umber % i == 0) :
+        list2.append(i)
+        n_umber = n_umber / i
+
+print("The prime factors of %s are: %s" % (numbe_r , list2))
